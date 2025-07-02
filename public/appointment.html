@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book Dental Appointment</title>
+  <link rel="stylesheet" href="appointment.css">
+</head>
+<body>
+  <div class="appointment-container">
+    <h1>Book Your Dental Appointment</h1>
+    <p>Healthy smile starts here 🦷</p>
+    <form class="appointment-form" class="appointment-form" method="POST" action="/book">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" name="name" placeholder="e.g. isaac osei" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="e.g. osei@example.com" required>
+
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="e.g. +233003453967899" required>
+
+      <label for="service">Select Service</label>
+      <select id="service" name="service" required>
+        <option value="">-- Select a Service --</option>
+        <option value="cleaning">Teeth Cleaning</option>
+        <option value="whitening">Teeth Whitening</option>
+        <option value="filling">Cavity Filling</option>
+        <option value="braces">Braces Consultation</option>
+      </select>
+
+      <label for="date">Preferred Date</label>
+      <input type="date" id="date" name="date" required>
+
+      <label for="time">Preferred Time</label>
+      <input type="time" id="time" name="time" required>
+
+      <label for="notes">Additional Notes</label>
+      <textarea id="notes" name="notes" placeholder="Let us know anything specific..."></textarea>
+
+      <button type="submit"><a href="staff_login.html"> Appointment</a></button>
+    </form>
+  </div>
+</body>
+</html>
